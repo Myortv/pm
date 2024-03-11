@@ -1,0 +1,44 @@
+# START OF DEFAULT ZSHRC FILE
+zstyle :compinstall filename '~/.zshrc'
+
+autoload -Uz compinit
+compinit
+
+HISTFILE=~/.histfile
+HISTSIZE=100000
+SAVEHIST=100000
+
+setopt beep extendedglob
+
+bindkey -v
+
+
+alias ls='ls --color'
+alias ip="ip -color"
+
+alias h='helix'
+alias passp='helix /pass/pass'
+alias passs='helix /pass/ssh_pass'
+
+alias l='clear; pwd -P; ls --color'
+alias home='cd; clear; pwd -P; ls --color'
+
+alias upgrade='sudo pacman -Syu'
+alias install='sudo pacman -S'
+alias delete='sudo pacman -Rus'
+
+alias p='python'
+
+alias add='git add'
+alias branch='git branch'
+alias status='git status'
+alias push='git push'
+
+export TerminalEmulator=alacritty
+export EDITOR=helix
+export TERM='alacritty'
+export EDITOR='helix'
+export BROWSER='qutebrowser'
+clear
+# END OF DEFAULT ZSHRC FILE
+
