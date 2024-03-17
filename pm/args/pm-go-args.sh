@@ -18,9 +18,8 @@ display_help() {
   echo "Usage: pm-go.sh [OPTIONS] family project"
   echo "Options:"
   echo "  family              Family of project to go"
-  echo "  project             Project to go"
+  echo "  project             Project to create new session"
   echo "  -h, --help          Display this help message"
-  echo "  -N,                 Create new session instead of connecting to running one"
   echo "  -D,                 Display debug info"
 }
 
@@ -55,11 +54,11 @@ if [ -z "$family_name" ]; then
   exit 1
 fi
 
-if [ -z "$project_name" ]; then
-  echo "Argument (project name) is mandatory"
-  display_help
-  exit 1
-fi
+# if [ -z "$project_name" ]; then
+#   echo "Argument (project name) is mandatory"
+#   display_help
+#   exit 1
+# fi
 
 
 if [ "$debug" = "true" ]; then

@@ -2,7 +2,7 @@
 PM is a few bash scripts that form a simple utility for managing local projects.
 
 **PM uses tmux as a dependency** to run project sessions. PM can still be used to generate projects, but some of its functionality will not be available without tmux. If it works out in the future to drop tmux as a dependency that would be great, but at the moment the alternatives look like something worse and writing your own solution seems pointless.
-
+**PM uses fzf as dependency** to choose session.
 
 #### Reasons:
 * When working from a terminal, it can take several steps between starting the terminal emulator and getting started. (cd to directory with project, activate environment, and so on)
@@ -26,7 +26,11 @@ In addition, pm provides "options" to automate the creation of projects and proj
 # Installation
 
 
-To get started, clone this repository in a directory you are comfortable with (for me it's ~/sources).
+Lets install dependencies for pm. Use your package manager (for me it's pacman)
+```
+sudo pacman -S tmux fzf
+```
+To get started with pm installation, clone this repository in a directory you are comfortable with (for me it's ~/sources).
 
 ```
 git clone https://github.com/Myortv/pm.git
