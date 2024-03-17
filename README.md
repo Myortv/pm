@@ -26,7 +26,7 @@ In addition, pm provides "options" to automate the creation of projects and proj
 # Installation
 
 
-To get started, slope this repository in a directory you are comfortable with (for me it's ~/sources).
+To get started, clone this repository in a directory you are comfortable with (for me it's ~/sources).
 
 ```
 git clone https://github.com/Myortv/pm.git
@@ -122,7 +122,7 @@ sudo pm-create-project.sh -N options -F docker_family -O readme
 sudo pm-go.sh docker_family minimal
 ```
 ```
-sudo pm-go.sh docker_family new -N
+sudo pm-go.sh docker_family minimal -N
 ```
 (will open new tmux session. Note that launching multiple session can be confising)
 >note that you don't have to use sudo for pm-go. I'm configured to use sudo without a password, so I just need to write pm-go (all the necessary calls to sudo occur inside the script and are needed to perform actions on the part of the family user)
@@ -152,7 +152,7 @@ source "$script_dir/configs/configs.sh"
 
 # some variables that were loaded from configs.sh:
 # projects_root_path="/codetemp"
-readme_file='other/readme.md'
+# readme_file='other/readme.md'
 
 
 family_name=$1
