@@ -173,8 +173,9 @@ cp "$scipt_dir/$readme_file" "$project"
 # Finally, let's copy our readme file
 ```
 > Please note that the option script is called readme.sh, but when selecting options you must write readme (.sh part is delivered automatically)
-#Tricks
 
+
+# Tricks
 
 * You can create a project/family on existing ones to apply new options
 * You can create "meta" options -- (see pyhon) where you will call several other options.
