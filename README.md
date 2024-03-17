@@ -177,11 +177,15 @@ cp "$scipt_dir/$readme_file" "$project"
 
 # Tricks
 
-* You can create a project/family on existing ones to apply new options
-* You can create "meta" options -- (see pyhon) where you will call several other options.
-*You can still connect to your family using su
-* You may need to change the default tmux config to make it work correctly with true-color (I use alacritty, so my config supports alacritty)
-
+#### You can create a project/family on existing ones to apply new options.
+#### You can create "meta" options -- (see pyhon) where you will call several other options.
+#### You can still connect to your family using su
+(or pm-go with any project name)
+#### You may need to change the default tmux config to make it work correctly with true-color (I use alacritty, so my config supports alacritty)
+```
+set -g default-terminal "alacritty" 
+set-option -sa terminal-overrides ",alacritty*:Tc" 
+```
 
 # PS
 > If this script receives updates, it will most likely be some more specific flags (like --git for cloning a repository) or various strange places will be corrected (like putting .sh when calling options)
